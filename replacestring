@@ -1,0 +1,7 @@
+##to find and replace character in mysql
+
+UPDATE source_app_name 
+    -> SET source_app_name = CONCAT(
+    ->                    REPLACE(
+    ->                       LEFT(source_app_name,1), 'e', ''),      
+    ->                       SUBSTRING(source_app_name, 2, CHAR_LENGTH(source_app_name)
