@@ -1,0 +1,3 @@
+#### most used service
+
+SELECT used_app_name, COUNT(DISTINCT device_master_fk) FROM device_app_usage GROUP BY used_app_name ORDER BY 2 DESC;
